@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
+	/>
+	<link rel="icon" 
+      type="image/png" 
+      href="./assets/icon/favicon-32x32.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>Test Page</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 2em;
+        font-family: 'Nunito', sans-serif;
+      }
+      .gallery {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: space-between;
+      }
+      .tile {
+        flex-basis: 32%;
+        box-shadow: 0px 0px 50px -41px rgba(0, 0, 0, 0.75);
+        overflow: hidden;
+        border-radius: 0.35em;
+      }
+      iframe {
+        border: none;
+        width: 100%;
+        height: 20em;
+      }
+      .text {
+        padding: 1.2em;
+      }
+      .line {
+        width: 100%;
+        height: 0.1em;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0.312em;
+        margin: 0.5em 0 1em 0;
+      }
+      h3, h1 {
+        color: #2f3542;
+      }
+      p {
+        color: #57606f;
+      }
+      @media only screen and (max-width: 1024px) {
+        .gallery {
+          flex-wrap: wrap;
+        }
+        .tile {
+          flex-basis: 48%;
+          margin-bottom: 2em;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .tile {
+          flex-basis: 100%;
+        }
+		body {
+			padding: 1.000em;
+		}
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test Page</h1>
+    <div class="gallery">
+      <div class="tile">
+        <div class="media">
+          <iframe allowfullscreen src="./panorama/panorama_street.html"></iframe>
+        </div>
+        <div class="text">
+          <h3>Casablanca Tunnel</h3>
+          <div class="line"></div>
+          <p>
+            There was no time. He ran out of the door without half the stuff he
+            needed for work, but it didn't matter. He was late and if he didn't
+            make this meeting on time, someone's life may be in danger.
+          </p>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="media">
+          <iframe allowfullscreen src="./panorama/panorama_field.html"></iframe>
+        </div>
+        <div class="text">
+          <h3>Lakeview Lake</h3>
+          <div class="line"></div>
+          <p>
+            It was a rat's nest. Not a literal one, but that is what her hair
+            seemed to resemble every morning when she got up. It was going to
+            take at least an hour to get it under control and she was sick and
+            tired of it. She peered into the mirror and wondered if it was worth
+            it. It wasn't. She opened the drawer and picked up the hair
+            clippers.
+          </p>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="media">
+          <iframe allowfullscreen src="./panorama/panorama_castle.html"></iframe>
+        </div>
+        <div class="text">
+          <h3>Scotland's Castle</h3>
+          <div class="line"></div>
+          <p>
+            She looked at her little girl who was about to become a teen. She
+            tried to think back to when the girl had been younger but failed to
+            pinpoint the exact moment when she had become a little too big to
+            pick up and carry. It hit her all at once. She was no longer a
+            little girl and she stood there speechless with fear, sadness, and
+            pride all running through her at the same time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  </body>
+</html>
