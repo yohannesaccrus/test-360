@@ -90,6 +90,16 @@ section .panorama[page="about"] {
 	left: 0;
 }
 
+/* .panorama .pnlm-container {
+	background: url('https://i2.sndcdn.com/avatars-000588997116-m1om07-t500x500.jpg') no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+} */
+
+.panorama .pnlm-container .pnlm-ui .pnlm-load-box {
+	opacity: 0;
+}
+
 section .about {
 	position: relative;
 	z-index: 1;
