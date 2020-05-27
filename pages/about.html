@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
@@ -43,15 +43,27 @@
       </ul>
     </nav>
     <section>
-        <div>
-          <h1>About Page</h1>
-          <p>
-            He sat across from her trying to imagine it was the first time. It
-            wasn't. Had it been a hundred? It quite possibly could have been. Two
-            hundred? Probably not. His mind wandered until he caught himself and
-            again tried to imagine it was the first time.
-          </p>
-        </div>
-      </section>
+      <div class="panorama" page="about">
+        <div id="panorama"></div>
+      </div>
+      <div class="about">
+        <h1>About Page</h1>
+        <p>
+          He sat across from her trying to imagine it was the first time. It
+          wasn't. Had it been a hundred? It quite possibly could have been. Two
+          hundred? Probably not. His mind wandered until he caught himself and
+          again tried to imagine it was the first time.
+        </p>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script>
+      pannellum.viewer('panorama', {
+        type: 'equirectangular',
+        panorama: '../assets/image/dawn4000x2000.jpg',
+        autoLoad: true,
+        showControls: false,
+      })
+    </script>
   </body>
 </html>
