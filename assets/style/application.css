@@ -1,0 +1,103 @@
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 1.2em 3.5em;
+	box-shadow: 10px 10px 41px -23px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+	flex-basis: 20%;
+}
+
+.menus {
+	flex-basis: 80%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menus li {
+	list-style: none;
+}
+
+.menus li:not(:last-child) {
+	margin-right: 1.5em;
+}
+
+.menus li a {
+	font-size: 1.1em;
+	cursor: pointer;
+	transition: all .5s ease;
+	padding: .200em .500em;
+}
+
+.menus li a:hover {
+	color: #fff;
+	border-radius: .350em;
+	background-color: salmon;
+}
+
+.logo h1, .menus li a {
+	color: #57606f;
+}
+
+#panorama {
+	height: 100%;
+}
+
+.panorama {
+	flex: auto;
+}
+
+section {
+	padding: 2.000em 3.500em;
+}
+
+section h1 {
+	color: #2f3542;
+}
+
+section p {
+	margin-top: .500em;
+	color: #57606f;
+	text-indent: 1.500em;
+}
+
+@media only screen and (max-width: 767px) {
+	nav {
+		padding: .500em 0;
+		flex-wrap: wrap;
+	}
+	.logo {
+		flex-basis: 100%;
+		text-align: center;
+		margin-bottom: .400em;
+	}
+	.menus {
+		flex-basis: 100%;
+		justify-content: center;
+	}
+	section {
+		padding: 2.000em;
+	}
+	section p {
+		text-align: justify;
+	}
+}
