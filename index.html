@@ -51,10 +51,20 @@
     <script>
       pannellum.viewer('panorama', {
         type: 'equirectangular',
-        panorama: './assets/image/castle.jpg',
+        panorama: './assets/image/dawn4000x2000.jpg',
         autoLoad: true,
-        hotSpotDebug: true,
+        // hotSpotDebug: true,
         showControls: false,
+
+        "hotSpots": [
+            {
+                "pitch": 0.7261661882986541,
+                "yaw": -7.746820428193821,
+                "type": "info",
+                "text": "Contact Us",
+                "URL": "mailto:dimaserras@invizzle.com"
+            }
+        ]
       })
     </script>
   </body>
