@@ -92,13 +92,22 @@ section .panorama[page="about"] {
 
 .panorama .pnlm-container {
 	background: #2f3542;
-	/* background: url('https://i2.sndcdn.com/avatars-000588997116-m1om07-t500x500.jpg') no-repeat;
-	background-size: cover;
-	background-position: 50% 50%; */
 }
 
-.panorama .pnlm-container .pnlm-ui .pnlm-load-box {
-	opacity: 0;
+.panorama .pnlm-container .pnlm-ui .pnlm-load-box, .panorama .pnlm-container .pnlm-ui .pnlm-about-msg {
+	opacity: 0 !important;
+}
+
+.pnlm-sprite {
+	background-image: url('https://cloud.headwayapp.co/changelogs_images/images/big/000/016/393-90c8090df0a63e76991bc6aae7b46c87d8cdb51e.gif');
+	background-repeat: no-repeat !important;
+	width: 2em;
+	height: 2em;
+	background-size: 2em 2em;
+}
+
+.pnlm-hotspot.pnlm-info {
+	background-position: 0 0;
 }
 
 section .about {
